@@ -1,0 +1,19 @@
+$OpenBSD: patch-tests_CMakeLists_txt,v 1.2 2017/04/24 08:47:58 sthen Exp $
+Index: tests/CMakeLists.txt
+--- tests/CMakeLists.txt.orig
++++ tests/CMakeLists.txt
+@@ -25,12 +25,12 @@ INCLUDE_DIRECTORIES(BEFORE
+ ADD_EXECUTABLE(mysql_client_test mysql_client_test.c)
+ SET(CLIENT_LIB mariadbclient mysys)
+ 
+-TARGET_LINK_LIBRARIES(mysql_client_test ${CLIENT_LIB})
++TARGET_LINK_LIBRARIES(mysql_client_test ${CLIENT_LIB} ${SSL_LIBRARIES})
+ ADD_DEPENDENCIES(mysql_client_test GenError ${CLIENT_LIB})
+ 
+ IF(WITH_UNIT_TESTS)
+   ADD_EXECUTABLE(bug25714 bug25714.c)
+-  TARGET_LINK_LIBRARIES(bug25714 ${CLIENT_LIB})
++  TARGET_LINK_LIBRARIES(bug25714 ${CLIENT_LIB} ${SSL_LIBRARIES})
+   ADD_DEPENDENCIES(bug25714 GenError ${CLIENT_LIB})
+ ENDIF()
+ 

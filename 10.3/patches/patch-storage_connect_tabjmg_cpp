@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: storage/connect/tabjmg.cpp
+--- storage/connect/tabjmg.cpp.orig
++++ storage/connect/tabjmg.cpp
+@@ -101,7 +101,7 @@ bool JMGDISC::ColDesc(PGLOBAL g, jobject obj, char *pc
+ 			continue;
+ 
+ 		jkey = (jstring)Jcp->env->CallObjectMethod(Jcp->job, bvnameid);
+-		key = Jcp->env->GetStringUTFChars(jkey, (jboolean)false);
++		key = Jcp->env->GetStringUTFChars(jkey, NULL);
+ 
+ 		if (pcn) {
+ 			strncpy(colname, pcn, 64);

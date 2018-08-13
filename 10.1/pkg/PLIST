@@ -1,0 +1,722 @@
+@comment $OpenBSD: PLIST,v$
+@option no-default-conflict
+@conflict mariadb-current->=10.1,<10.2
+@sample ${SYSCONFDIR}/${MARIADB_VER}/
+@rcscript ${RCDIR}/mariadb101
+${MARIADB_VER}/
+${MARIADB_VER}/bin/
+@bin ${MARIADB_VER}/bin/aria_chk
+@bin ${MARIADB_VER}/bin/aria_dump_log
+@bin ${MARIADB_VER}/bin/aria_ftdump
+@bin ${MARIADB_VER}/bin/aria_pack
+@bin ${MARIADB_VER}/bin/aria_read_log
+@bin ${MARIADB_VER}/bin/innochecksum
+@bin ${MARIADB_VER}/bin/mariabackup
+@bin ${MARIADB_VER}/bin/mbstream
+${MARIADB_VER}/bin/msql2mysql
+@bin ${MARIADB_VER}/bin/my_print_defaults
+@bin ${MARIADB_VER}/bin/myisam_ftdump
+@bin ${MARIADB_VER}/bin/myisamchk
+@bin ${MARIADB_VER}/bin/myisamlog
+@bin ${MARIADB_VER}/bin/myisampack
+@bin ${MARIADB_VER}/bin/mysql
+@bin ${MARIADB_VER}/bin/mysql_client_test
+${MARIADB_VER}/bin/mysql_config
+${MARIADB_VER}/bin/mysql_convert_table_format
+${MARIADB_VER}/bin/mysql_find_rows
+${MARIADB_VER}/bin/mysql_fix_extensions
+${MARIADB_VER}/bin/mysql_install_db
+@bin ${MARIADB_VER}/bin/mysql_plugin
+${MARIADB_VER}/bin/mysql_secure_installation
+${MARIADB_VER}/bin/mysql_setpermission
+@bin ${MARIADB_VER}/bin/mysql_tzinfo_to_sql
+@bin ${MARIADB_VER}/bin/mysql_upgrade
+@bin ${MARIADB_VER}/bin/mysql_waitpid
+${MARIADB_VER}/bin/mysql_zap
+${MARIADB_VER}/bin/mysqlaccess
+@bin ${MARIADB_VER}/bin/mysqladmin
+@bin ${MARIADB_VER}/bin/mysqlbinlog
+${MARIADB_VER}/bin/mysqlbug
+@bin ${MARIADB_VER}/bin/mysqlcheck
+${MARIADB_VER}/bin/mysqld_multi
+${MARIADB_VER}/bin/mysqld_safe
+@bin ${MARIADB_VER}/bin/mysqld_safe_helper
+@bin ${MARIADB_VER}/bin/mysqldump
+${MARIADB_VER}/bin/mysqldumpslow
+${MARIADB_VER}/bin/mysqlhotcopy
+@bin ${MARIADB_VER}/bin/mysqlimport
+@bin ${MARIADB_VER}/bin/mysqlshow
+@bin ${MARIADB_VER}/bin/mysqlslap
+@bin ${MARIADB_VER}/bin/mysqltest
+${MARIADB_VER}/bin/mytop
+@bin ${MARIADB_VER}/bin/perror
+@bin ${MARIADB_VER}/bin/replace
+@bin ${MARIADB_VER}/bin/resolve_stack_dump
+@bin ${MARIADB_VER}/bin/resolveip
+${MARIADB_VER}/bin/wsrep_sst_common
+${MARIADB_VER}/bin/wsrep_sst_mariabackup
+${MARIADB_VER}/bin/wsrep_sst_mysqldump
+${MARIADB_VER}/bin/wsrep_sst_rsync
+${MARIADB_VER}/bin/wsrep_sst_rsync_wan
+${MARIADB_VER}/bin/wsrep_sst_xtrabackup
+${MARIADB_VER}/bin/wsrep_sst_xtrabackup-v2
+${MARIADB_VER}/include/
+${MARIADB_VER}/include/auth_dialog_client.h
+${MARIADB_VER}/include/big_endian.h
+${MARIADB_VER}/include/byte_order_generic.h
+${MARIADB_VER}/include/byte_order_generic_x86.h
+${MARIADB_VER}/include/byte_order_generic_x86_64.h
+${MARIADB_VER}/include/client_plugin.h
+${MARIADB_VER}/include/decimal.h
+${MARIADB_VER}/include/errmsg.h
+${MARIADB_VER}/include/handler_ername.h
+${MARIADB_VER}/include/handler_state.h
+${MARIADB_VER}/include/keycache.h
+${MARIADB_VER}/include/little_endian.h
+${MARIADB_VER}/include/m_ctype.h
+${MARIADB_VER}/include/m_string.h
+${MARIADB_VER}/include/ma_dyncol.h
+${MARIADB_VER}/include/my_alloc.h
+${MARIADB_VER}/include/my_attribute.h
+${MARIADB_VER}/include/my_byteorder.h
+${MARIADB_VER}/include/my_compiler.h
+${MARIADB_VER}/include/my_config.h
+${MARIADB_VER}/include/my_dbug.h
+${MARIADB_VER}/include/my_decimal_limits.h
+${MARIADB_VER}/include/my_dir.h
+${MARIADB_VER}/include/my_getopt.h
+${MARIADB_VER}/include/my_global.h
+${MARIADB_VER}/include/my_list.h
+${MARIADB_VER}/include/my_net.h
+${MARIADB_VER}/include/my_pthread.h
+${MARIADB_VER}/include/my_sys.h
+${MARIADB_VER}/include/my_valgrind.h
+${MARIADB_VER}/include/my_xml.h
+${MARIADB_VER}/include/mysql.h
+${MARIADB_VER}/include/mysql_com.h
+${MARIADB_VER}/include/mysql_com_server.h
+${MARIADB_VER}/include/mysql_embed.h
+${MARIADB_VER}/include/mysql_time.h
+${MARIADB_VER}/include/mysql_version.h
+${MARIADB_VER}/include/mysqld_ername.h
+${MARIADB_VER}/include/mysqld_error.h
+${MARIADB_VER}/include/plugin.h
+${MARIADB_VER}/include/plugin_audit.h
+${MARIADB_VER}/include/plugin_auth.h
+${MARIADB_VER}/include/plugin_auth_common.h
+${MARIADB_VER}/include/plugin_encryption.h
+${MARIADB_VER}/include/plugin_ftparser.h
+${MARIADB_VER}/include/plugin_password_validation.h
+${MARIADB_VER}/include/private/
+${MARIADB_VER}/include/private/atomic/
+${MARIADB_VER}/include/private/atomic/gcc_builtins.h
+${MARIADB_VER}/include/private/atomic/generic-msvc.h
+${MARIADB_VER}/include/private/atomic/nolock.h
+${MARIADB_VER}/include/private/atomic/solaris.h
+${MARIADB_VER}/include/private/atomic/x86-gcc.h
+${MARIADB_VER}/include/private/authors.h
+${MARIADB_VER}/include/private/bounded_queue.h
+${MARIADB_VER}/include/private/client_settings.h
+${MARIADB_VER}/include/private/compat56.h
+${MARIADB_VER}/include/private/config.h
+${MARIADB_VER}/include/private/contributors.h
+${MARIADB_VER}/include/private/create_options.h
+${MARIADB_VER}/include/private/custom_conf.h
+${MARIADB_VER}/include/private/datadict.h
+${MARIADB_VER}/include/private/debug_sync.h
+${MARIADB_VER}/include/private/derror.h
+${MARIADB_VER}/include/private/des_key_file.h
+${MARIADB_VER}/include/private/discover.h
+${MARIADB_VER}/include/private/event_data_objects.h
+${MARIADB_VER}/include/private/event_db_repository.h
+${MARIADB_VER}/include/private/event_parse_data.h
+${MARIADB_VER}/include/private/event_queue.h
+${MARIADB_VER}/include/private/event_scheduler.h
+${MARIADB_VER}/include/private/events.h
+${MARIADB_VER}/include/private/field.h
+${MARIADB_VER}/include/private/filesort.h
+${MARIADB_VER}/include/private/filesort_utils.h
+${MARIADB_VER}/include/private/ft_global.h
+${MARIADB_VER}/include/private/gcalc_slicescan.h
+${MARIADB_VER}/include/private/gcalc_tools.h
+${MARIADB_VER}/include/private/group_by_handler.h
+${MARIADB_VER}/include/private/gstream.h
+${MARIADB_VER}/include/private/ha_partition.h
+${MARIADB_VER}/include/private/handler.h
+${MARIADB_VER}/include/private/hash.h
+${MARIADB_VER}/include/private/hash_filo.h
+${MARIADB_VER}/include/private/heap.h
+${MARIADB_VER}/include/private/hostname.h
+${MARIADB_VER}/include/private/init.h
+${MARIADB_VER}/include/private/innodb_priv.h
+${MARIADB_VER}/include/private/item.h
+${MARIADB_VER}/include/private/item_cmpfunc.h
+${MARIADB_VER}/include/private/item_create.h
+${MARIADB_VER}/include/private/item_func.h
+${MARIADB_VER}/include/private/item_geofunc.h
+${MARIADB_VER}/include/private/item_inetfunc.h
+${MARIADB_VER}/include/private/item_row.h
+${MARIADB_VER}/include/private/item_strfunc.h
+${MARIADB_VER}/include/private/item_subselect.h
+${MARIADB_VER}/include/private/item_sum.h
+${MARIADB_VER}/include/private/item_timefunc.h
+${MARIADB_VER}/include/private/item_xmlfunc.h
+${MARIADB_VER}/include/private/key.h
+${MARIADB_VER}/include/private/keycaches.h
+${MARIADB_VER}/include/private/lex.h
+${MARIADB_VER}/include/private/lex_symbol.h
+${MARIADB_VER}/include/private/lf.h
+${MARIADB_VER}/include/private/lock.h
+${MARIADB_VER}/include/private/log.h
+${MARIADB_VER}/include/private/log_event.h
+${MARIADB_VER}/include/private/log_event_old.h
+${MARIADB_VER}/include/private/log_slow.h
+${MARIADB_VER}/include/private/maria.h
+${MARIADB_VER}/include/private/mdl.h
+${MARIADB_VER}/include/private/mem_root_array.h
+${MARIADB_VER}/include/private/message.h
+${MARIADB_VER}/include/private/multi_range_read.h
+${MARIADB_VER}/include/private/my_alarm.h
+${MARIADB_VER}/include/private/my_apc.h
+${MARIADB_VER}/include/private/my_atomic.h
+${MARIADB_VER}/include/private/my_base.h
+${MARIADB_VER}/include/private/my_bit.h
+${MARIADB_VER}/include/private/my_bitmap.h
+${MARIADB_VER}/include/private/my_check_opt.h
+${MARIADB_VER}/include/private/my_compare.h
+${MARIADB_VER}/include/private/my_context.h
+${MARIADB_VER}/include/private/my_cpu.h
+${MARIADB_VER}/include/private/my_crypt.h
+${MARIADB_VER}/include/private/my_decimal.h
+${MARIADB_VER}/include/private/my_default.h
+${MARIADB_VER}/include/private/my_handler_errors.h
+${MARIADB_VER}/include/private/my_json_writer.h
+${MARIADB_VER}/include/private/my_libwrap.h
+${MARIADB_VER}/include/private/my_md5.h
+${MARIADB_VER}/include/private/my_nosys.h
+${MARIADB_VER}/include/private/my_rdtsc.h
+${MARIADB_VER}/include/private/my_rnd.h
+${MARIADB_VER}/include/private/my_service_manager.h
+${MARIADB_VER}/include/private/my_stacktrace.h
+${MARIADB_VER}/include/private/my_time.h
+${MARIADB_VER}/include/private/my_tree.h
+${MARIADB_VER}/include/private/my_uctype.h
+${MARIADB_VER}/include/private/my_user.h
+${MARIADB_VER}/include/private/myisam.h
+${MARIADB_VER}/include/private/myisamchk.h
+${MARIADB_VER}/include/private/myisammrg.h
+${MARIADB_VER}/include/private/myisampack.h
+${MARIADB_VER}/include/private/mysql_async.h
+${MARIADB_VER}/include/private/mysqld.h
+${MARIADB_VER}/include/private/mysqld_default_groups.h
+${MARIADB_VER}/include/private/mysqld_suffix.h
+${MARIADB_VER}/include/private/mysys_err.h
+${MARIADB_VER}/include/private/nt_servc.h
+${MARIADB_VER}/include/private/opt_range.h
+${MARIADB_VER}/include/private/opt_subselect.h
+${MARIADB_VER}/include/private/parse_file.h
+${MARIADB_VER}/include/private/partition_element.h
+${MARIADB_VER}/include/private/partition_info.h
+${MARIADB_VER}/include/private/password.h
+${MARIADB_VER}/include/private/pcre.h
+${MARIADB_VER}/include/private/probes_mysql.h
+${MARIADB_VER}/include/private/probes_mysql_nodtrace.h
+${MARIADB_VER}/include/private/procedure.h
+${MARIADB_VER}/include/private/protocol.h
+${MARIADB_VER}/include/private/queues.h
+${MARIADB_VER}/include/private/records.h
+${MARIADB_VER}/include/private/repl_failsafe.h
+${MARIADB_VER}/include/private/replication.h
+${MARIADB_VER}/include/private/rijndael.h
+${MARIADB_VER}/include/private/rpl_constants.h
+${MARIADB_VER}/include/private/rpl_filter.h
+${MARIADB_VER}/include/private/rpl_gtid.h
+${MARIADB_VER}/include/private/rpl_handler.h
+${MARIADB_VER}/include/private/rpl_injector.h
+${MARIADB_VER}/include/private/rpl_mi.h
+${MARIADB_VER}/include/private/rpl_parallel.h
+${MARIADB_VER}/include/private/rpl_record.h
+${MARIADB_VER}/include/private/rpl_record_old.h
+${MARIADB_VER}/include/private/rpl_reporting.h
+${MARIADB_VER}/include/private/rpl_rli.h
+${MARIADB_VER}/include/private/rpl_tblmap.h
+${MARIADB_VER}/include/private/rpl_utility.h
+${MARIADB_VER}/include/private/scheduler.h
+${MARIADB_VER}/include/private/service_versions.h
+${MARIADB_VER}/include/private/set_var.h
+${MARIADB_VER}/include/private/slave.h
+${MARIADB_VER}/include/private/sp.h
+${MARIADB_VER}/include/private/sp_cache.h
+${MARIADB_VER}/include/private/sp_head.h
+${MARIADB_VER}/include/private/sp_pcontext.h
+${MARIADB_VER}/include/private/sp_rcontext.h
+${MARIADB_VER}/include/private/spatial.h
+${MARIADB_VER}/include/private/sql_acl.h
+${MARIADB_VER}/include/private/sql_admin.h
+${MARIADB_VER}/include/private/sql_alter.h
+${MARIADB_VER}/include/private/sql_analyse.h
+${MARIADB_VER}/include/private/sql_analyze_stmt.h
+${MARIADB_VER}/include/private/sql_array.h
+${MARIADB_VER}/include/private/sql_audit.h
+${MARIADB_VER}/include/private/sql_base.h
+${MARIADB_VER}/include/private/sql_binlog.h
+${MARIADB_VER}/include/private/sql_bitmap.h
+${MARIADB_VER}/include/private/sql_bootstrap.h
+${MARIADB_VER}/include/private/sql_cache.h
+${MARIADB_VER}/include/private/sql_callback.h
+${MARIADB_VER}/include/private/sql_class.h
+${MARIADB_VER}/include/private/sql_cmd.h
+${MARIADB_VER}/include/private/sql_connect.h
+${MARIADB_VER}/include/private/sql_const.h
+${MARIADB_VER}/include/private/sql_crypt.h
+${MARIADB_VER}/include/private/sql_cursor.h
+${MARIADB_VER}/include/private/sql_db.h
+${MARIADB_VER}/include/private/sql_delete.h
+${MARIADB_VER}/include/private/sql_derived.h
+${MARIADB_VER}/include/private/sql_digest.h
+${MARIADB_VER}/include/private/sql_digest_stream.h
+${MARIADB_VER}/include/private/sql_do.h
+${MARIADB_VER}/include/private/sql_error.h
+${MARIADB_VER}/include/private/sql_explain.h
+${MARIADB_VER}/include/private/sql_expression_cache.h
+${MARIADB_VER}/include/private/sql_get_diagnostics.h
+${MARIADB_VER}/include/private/sql_handler.h
+${MARIADB_VER}/include/private/sql_help.h
+${MARIADB_VER}/include/private/sql_hset.h
+${MARIADB_VER}/include/private/sql_insert.h
+${MARIADB_VER}/include/private/sql_join_cache.h
+${MARIADB_VER}/include/private/sql_lex.h
+${MARIADB_VER}/include/private/sql_lifo_buffer.h
+${MARIADB_VER}/include/private/sql_list.h
+${MARIADB_VER}/include/private/sql_load.h
+${MARIADB_VER}/include/private/sql_locale.h
+${MARIADB_VER}/include/private/sql_manager.h
+${MARIADB_VER}/include/private/sql_parse.h
+${MARIADB_VER}/include/private/sql_partition.h
+${MARIADB_VER}/include/private/sql_partition_admin.h
+${MARIADB_VER}/include/private/sql_plist.h
+${MARIADB_VER}/include/private/sql_plugin.h
+${MARIADB_VER}/include/private/sql_plugin_compat.h
+${MARIADB_VER}/include/private/sql_prepare.h
+${MARIADB_VER}/include/private/sql_priv.h
+${MARIADB_VER}/include/private/sql_profile.h
+${MARIADB_VER}/include/private/sql_reload.h
+${MARIADB_VER}/include/private/sql_rename.h
+${MARIADB_VER}/include/private/sql_repl.h
+${MARIADB_VER}/include/private/sql_select.h
+${MARIADB_VER}/include/private/sql_servers.h
+${MARIADB_VER}/include/private/sql_show.h
+${MARIADB_VER}/include/private/sql_signal.h
+${MARIADB_VER}/include/private/sql_sort.h
+${MARIADB_VER}/include/private/sql_statistics.h
+${MARIADB_VER}/include/private/sql_string.h
+${MARIADB_VER}/include/private/sql_table.h
+${MARIADB_VER}/include/private/sql_tablespace.h
+${MARIADB_VER}/include/private/sql_test.h
+${MARIADB_VER}/include/private/sql_time.h
+${MARIADB_VER}/include/private/sql_trigger.h
+${MARIADB_VER}/include/private/sql_truncate.h
+${MARIADB_VER}/include/private/sql_type.h
+${MARIADB_VER}/include/private/sql_udf.h
+${MARIADB_VER}/include/private/sql_union.h
+${MARIADB_VER}/include/private/sql_update.h
+${MARIADB_VER}/include/private/sql_view.h
+${MARIADB_VER}/include/private/sql_yacc.h
+${MARIADB_VER}/include/private/strfunc.h
+${MARIADB_VER}/include/private/structs.h
+${MARIADB_VER}/include/private/sys_vars_shared.h
+${MARIADB_VER}/include/private/t_ctype.h
+${MARIADB_VER}/include/private/table.h
+${MARIADB_VER}/include/private/table_cache.h
+${MARIADB_VER}/include/private/thr_alarm.h
+${MARIADB_VER}/include/private/thr_lock.h
+${MARIADB_VER}/include/private/thr_malloc.h
+${MARIADB_VER}/include/private/thr_timer.h
+${MARIADB_VER}/include/private/thread_pool_priv.h
+${MARIADB_VER}/include/private/threadpool.h
+${MARIADB_VER}/include/private/transaction.h
+${MARIADB_VER}/include/private/tzfile.h
+${MARIADB_VER}/include/private/tztime.h
+${MARIADB_VER}/include/private/unireg.h
+${MARIADB_VER}/include/private/violite.h
+${MARIADB_VER}/include/private/waiting_threads.h
+${MARIADB_VER}/include/private/welcome_copyright_notice.h
+${MARIADB_VER}/include/private/winservice.h
+${MARIADB_VER}/include/private/wqueue.h
+${MARIADB_VER}/include/private/wsrep.h
+${MARIADB_VER}/include/private/wsrep_applier.h
+${MARIADB_VER}/include/private/wsrep_binlog.h
+${MARIADB_VER}/include/private/wsrep_mysqld.h
+${MARIADB_VER}/include/private/wsrep_priv.h
+${MARIADB_VER}/include/private/wsrep_sst.h
+${MARIADB_VER}/include/private/wsrep_thd.h
+${MARIADB_VER}/include/private/wsrep_utils.h
+${MARIADB_VER}/include/private/wsrep_var.h
+${MARIADB_VER}/include/private/wsrep_xid.h
+${MARIADB_VER}/include/psi/
+${MARIADB_VER}/include/psi/mysql_file.h
+${MARIADB_VER}/include/psi/mysql_idle.h
+${MARIADB_VER}/include/psi/mysql_socket.h
+${MARIADB_VER}/include/psi/mysql_stage.h
+${MARIADB_VER}/include/psi/mysql_statement.h
+${MARIADB_VER}/include/psi/mysql_table.h
+${MARIADB_VER}/include/psi/mysql_thread.h
+${MARIADB_VER}/include/psi/psi.h
+${MARIADB_VER}/include/psi/psi_abi_v0.h
+${MARIADB_VER}/include/psi/psi_abi_v1.h
+${MARIADB_VER}/include/psi/psi_abi_v2.h
+${MARIADB_VER}/include/service_base64.h
+${MARIADB_VER}/include/service_debug_sync.h
+${MARIADB_VER}/include/service_encryption.h
+${MARIADB_VER}/include/service_encryption_scheme.h
+${MARIADB_VER}/include/service_kill_statement.h
+${MARIADB_VER}/include/service_logger.h
+${MARIADB_VER}/include/service_md5.h
+${MARIADB_VER}/include/service_my_crypt.h
+${MARIADB_VER}/include/service_my_print_error.h
+${MARIADB_VER}/include/service_my_snprintf.h
+${MARIADB_VER}/include/service_progress_report.h
+${MARIADB_VER}/include/service_sha1.h
+${MARIADB_VER}/include/service_sha2.h
+${MARIADB_VER}/include/service_thd_alloc.h
+${MARIADB_VER}/include/service_thd_autoinc.h
+${MARIADB_VER}/include/service_thd_error_context.h
+${MARIADB_VER}/include/service_thd_rnd.h
+${MARIADB_VER}/include/service_thd_specifics.h
+${MARIADB_VER}/include/service_thd_timezone.h
+${MARIADB_VER}/include/service_thd_wait.h
+${MARIADB_VER}/include/service_wsrep.h
+${MARIADB_VER}/include/services.h
+${MARIADB_VER}/include/sql_common.h
+${MARIADB_VER}/include/sql_state.h
+${MARIADB_VER}/include/sslopt-case.h
+${MARIADB_VER}/include/sslopt-longopts.h
+${MARIADB_VER}/include/sslopt-vars.h
+${MARIADB_VER}/include/typelib.h
+${MARIADB_VER}/lib/
+${MARIADB_VER}/lib/libmysqlclient.a
+@lib ${MARIADB_VER}/lib/libmysqlclient.so.${LIBmysqlclient_VERSION}
+${MARIADB_VER}/lib/libmysqlclient_r.a
+@lib ${MARIADB_VER}/lib/libmysqlclient_r.so.${LIBmysqlclient_r_VERSION}
+${MARIADB_VER}/lib/libmysqlservices.a
+${MARIADB_VER}/lib/plugin/
+${MARIADB_VER}/lib/plugin/JavaWrappers.jar
+${MARIADB_VER}/lib/plugin/JdbcInterface.jar
+${MARIADB_VER}/lib/plugin/adt_null.so
+${MARIADB_VER}/lib/plugin/auth_0x0100.so
+${MARIADB_VER}/lib/plugin/auth_ed25519.so
+${MARIADB_VER}/lib/plugin/auth_socket.so
+${MARIADB_VER}/lib/plugin/auth_test_plugin.so
+${MARIADB_VER}/lib/plugin/client_ed25519.so
+${MARIADB_VER}/lib/plugin/daemon_example.ini
+${MARIADB_VER}/lib/plugin/debug_key_management.so
+${MARIADB_VER}/lib/plugin/dialog.so
+${MARIADB_VER}/lib/plugin/dialog_examples.so
+${MARIADB_VER}/lib/plugin/example_key_management.so
+${MARIADB_VER}/lib/plugin/file_key_management.so
+${MARIADB_VER}/lib/plugin/ha_archive.so
+${MARIADB_VER}/lib/plugin/ha_blackhole.so
+${MARIADB_VER}/lib/plugin/ha_connect.so
+${MARIADB_VER}/lib/plugin/ha_example.so
+${MARIADB_VER}/lib/plugin/ha_federated.so
+${MARIADB_VER}/lib/plugin/ha_federatedx.so
+${MARIADB_VER}/lib/plugin/ha_innodb.so
+${MARIADB_VER}/lib/plugin/ha_sphinx.so
+${MARIADB_VER}/lib/plugin/ha_spider.so
+${MARIADB_VER}/lib/plugin/ha_test_sql_discovery.so
+${MARIADB_VER}/lib/plugin/handlersocket.so
+${MARIADB_VER}/lib/plugin/libdaemon_example.so
+${MARIADB_VER}/lib/plugin/locales.so
+${MARIADB_VER}/lib/plugin/metadata_lock_info.so
+${MARIADB_VER}/lib/plugin/mypluglib.so
+${MARIADB_VER}/lib/plugin/mysql_clear_password.so
+${MARIADB_VER}/lib/plugin/qa_auth_client.so
+${MARIADB_VER}/lib/plugin/qa_auth_interface.so
+${MARIADB_VER}/lib/plugin/qa_auth_server.so
+${MARIADB_VER}/lib/plugin/query_cache_info.so
+${MARIADB_VER}/lib/plugin/query_response_time.so
+${MARIADB_VER}/lib/plugin/semisync_master.so
+${MARIADB_VER}/lib/plugin/semisync_slave.so
+${MARIADB_VER}/lib/plugin/server_audit.so
+${MARIADB_VER}/lib/plugin/simple_password_check.so
+${MARIADB_VER}/lib/plugin/sql_errlog.so
+${MARIADB_VER}/lib/plugin/wsrep_info.so
+${MARIADB_VER}/libexec/
+@bin ${MARIADB_VER}/libexec/mysqld
+${MARIADB_VER}/libexec/rcmysql
+@mandir ${MARIADB_VER}/man/
+${MARIADB_VER}/man/man1/
+@man ${MARIADB_VER}/man/man1/aria_chk.1
+@man ${MARIADB_VER}/man/man1/aria_dump_log.1
+@man ${MARIADB_VER}/man/man1/aria_ftdump.1
+@man ${MARIADB_VER}/man/man1/aria_pack.1
+@man ${MARIADB_VER}/man/man1/aria_read_log.1
+@man ${MARIADB_VER}/man/man1/galera_new_cluster.1
+@man ${MARIADB_VER}/man/man1/galera_recovery.1
+@man ${MARIADB_VER}/man/man1/innochecksum.1
+@man ${MARIADB_VER}/man/man1/mariadb-service-convert.1
+@man ${MARIADB_VER}/man/man1/msql2mysql.1
+@man ${MARIADB_VER}/man/man1/my_print_defaults.1
+@man ${MARIADB_VER}/man/man1/my_safe_process.1
+@man ${MARIADB_VER}/man/man1/myisam_ftdump.1
+@man ${MARIADB_VER}/man/man1/myisamchk.1
+@man ${MARIADB_VER}/man/man1/myisamlog.1
+@man ${MARIADB_VER}/man/man1/myisampack.1
+@man ${MARIADB_VER}/man/man1/mysql-stress-test.pl.1
+@man ${MARIADB_VER}/man/man1/mysql-test-run.pl.1
+@man ${MARIADB_VER}/man/man1/mysql.1
+@man ${MARIADB_VER}/man/man1/mysql.server.1
+@man ${MARIADB_VER}/man/man1/mysql_client_test.1
+@man ${MARIADB_VER}/man/man1/mysql_client_test_embedded.1
+@man ${MARIADB_VER}/man/man1/mysql_config.1
+@man ${MARIADB_VER}/man/man1/mysql_convert_table_format.1
+@man ${MARIADB_VER}/man/man1/mysql_find_rows.1
+@man ${MARIADB_VER}/man/man1/mysql_fix_extensions.1
+@man ${MARIADB_VER}/man/man1/mysql_install_db.1
+@man ${MARIADB_VER}/man/man1/mysql_plugin.1
+@man ${MARIADB_VER}/man/man1/mysql_secure_installation.1
+@man ${MARIADB_VER}/man/man1/mysql_setpermission.1
+@man ${MARIADB_VER}/man/man1/mysql_tzinfo_to_sql.1
+@man ${MARIADB_VER}/man/man1/mysql_upgrade.1
+@man ${MARIADB_VER}/man/man1/mysql_waitpid.1
+@man ${MARIADB_VER}/man/man1/mysql_zap.1
+@man ${MARIADB_VER}/man/man1/mysqlaccess.1
+@man ${MARIADB_VER}/man/man1/mysqladmin.1
+@man ${MARIADB_VER}/man/man1/mysqlbinlog.1
+@man ${MARIADB_VER}/man/man1/mysqlbug.1
+@man ${MARIADB_VER}/man/man1/mysqlcheck.1
+@man ${MARIADB_VER}/man/man1/mysqld_multi.1
+@man ${MARIADB_VER}/man/man1/mysqld_safe.1
+@man ${MARIADB_VER}/man/man1/mysqld_safe_helper.1
+@man ${MARIADB_VER}/man/man1/mysqldump.1
+@man ${MARIADB_VER}/man/man1/mysqldumpslow.1
+@man ${MARIADB_VER}/man/man1/mysqlhotcopy.1
+@man ${MARIADB_VER}/man/man1/mysqlimport.1
+@man ${MARIADB_VER}/man/man1/mysqlshow.1
+@man ${MARIADB_VER}/man/man1/mysqlslap.1
+@man ${MARIADB_VER}/man/man1/mysqltest.1
+@man ${MARIADB_VER}/man/man1/mysqltest_embedded.1
+@man ${MARIADB_VER}/man/man1/perror.1
+@man ${MARIADB_VER}/man/man1/replace.1
+@man ${MARIADB_VER}/man/man1/resolve_stack_dump.1
+@man ${MARIADB_VER}/man/man1/resolveip.1
+@man ${MARIADB_VER}/man/man1/tokuft_logdump.1
+@man ${MARIADB_VER}/man/man1/tokuftdump.1
+@man ${MARIADB_VER}/man/man1/wsrep_sst_common.1
+@man ${MARIADB_VER}/man/man1/wsrep_sst_mysqldump.1
+@man ${MARIADB_VER}/man/man1/wsrep_sst_rsync.1
+@man ${MARIADB_VER}/man/man1/wsrep_sst_xtrabackup-v2.1
+@man ${MARIADB_VER}/man/man1/wsrep_sst_xtrabackup.1
+${MARIADB_VER}/man/man8/
+@man ${MARIADB_VER}/man/man8/mysqld.8
+${MARIADB_VER}/share/
+${MARIADB_VER}/share/aclocal/
+${MARIADB_VER}/share/aclocal/mysql.m4
+${MARIADB_VER}/share/doc/
+${MARIADB_VER}/share/doc/COPYING
+${MARIADB_VER}/share/doc/COPYING.thirdparty
+${MARIADB_VER}/share/doc/CREDITS
+${MARIADB_VER}/share/doc/EXCEPTIONS-CLIENT
+${MARIADB_VER}/share/doc/INSTALL-BINARY
+${MARIADB_VER}/share/doc/README
+${MARIADB_VER}/share/doc/README-wsrep
+${MARIADB_VER}/share/examples/
+${MARIADB_VER}/share/examples/binary-configure
+${MARIADB_VER}/share/examples/magic
+${MARIADB_VER}/share/examples/my-huge.cnf
+${MARIADB_VER}/share/examples/my-innodb-heavy-4G.cnf
+${MARIADB_VER}/share/examples/my-large.cnf
+${MARIADB_VER}/share/examples/my-medium.cnf
+@sample ${SYSCONFDIR}/${MARIADB_VER}/my.cnf
+${MARIADB_VER}/share/examples/my-small.cnf
+${MARIADB_VER}/share/examples/mysql-log-rotate
+${MARIADB_VER}/share/examples/mysql.server
+${MARIADB_VER}/share/examples/mysqld_multi.server
+${MARIADB_VER}/share/examples/policy/
+${MARIADB_VER}/share/examples/policy/apparmor/
+${MARIADB_VER}/share/examples/policy/apparmor/README
+${MARIADB_VER}/share/examples/policy/apparmor/usr.sbin.mysqld
+${MARIADB_VER}/share/examples/policy/apparmor/usr.sbin.mysqld.local
+${MARIADB_VER}/share/examples/policy/selinux/
+${MARIADB_VER}/share/examples/policy/selinux/README
+${MARIADB_VER}/share/examples/policy/selinux/mariadb-server.fc
+${MARIADB_VER}/share/examples/policy/selinux/mariadb-server.te
+${MARIADB_VER}/share/examples/policy/selinux/mariadb.te
+${MARIADB_VER}/share/examples/wsrep.cnf
+${MARIADB_VER}/share/examples/wsrep_notify
+${MARIADB_VER}/share/mariadb/
+${MARIADB_VER}/share/mariadb-bench/
+${MARIADB_VER}/share/mariadb-bench/sql-bench/
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/aircraft.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/airline.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/airport.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/airport_service.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/city.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/class_of_service.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/code_description.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/compound_class.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/connect_leg.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/date_day.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/day_name.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/dual_carrier.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/fare.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/fconnection.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/flight.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/flight_class.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/flight_day.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/flight_fare.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/food_service.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/ground_service.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/month_name.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/restrict_carrier.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/restrict_class.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/restriction.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/state.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/stop.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/stop1.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/time_interval.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/time_zone.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/ATIS/transport.txt
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/Wisconsin/
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/Wisconsin/onek.data
+${MARIADB_VER}/share/mariadb-bench/sql-bench/Data/Wisconsin/tenk.data
+${MARIADB_VER}/share/mariadb-bench/sql-bench/README
+${MARIADB_VER}/share/mariadb-bench/sql-bench/bench-count-distinct
+${MARIADB_VER}/share/mariadb-bench/sql-bench/bench-init.pl
+${MARIADB_VER}/share/mariadb-bench/sql-bench/compare-results
+${MARIADB_VER}/share/mariadb-bench/sql-bench/copy-db
+${MARIADB_VER}/share/mariadb-bench/sql-bench/crash-me
+${MARIADB_VER}/share/mariadb-bench/sql-bench/graph-compare-results
+${MARIADB_VER}/share/mariadb-bench/sql-bench/innotest1
+${MARIADB_VER}/share/mariadb-bench/sql-bench/innotest1a
+${MARIADB_VER}/share/mariadb-bench/sql-bench/innotest1b
+${MARIADB_VER}/share/mariadb-bench/sql-bench/innotest2
+${MARIADB_VER}/share/mariadb-bench/sql-bench/innotest2a
+${MARIADB_VER}/share/mariadb-bench/sql-bench/innotest2b
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/Adabas.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/Informix.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/access.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/access_odbc.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/db2.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/empress.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/frontbase.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/interbase-dialect1.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/interbase-dialect3.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/interbase-superserver.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/interbase.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/mimer.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/ms-sql.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/ms-sql65.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/msql.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/mysql-3.22.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/mysql-3.23.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/mysql-4.0.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/mysql-4.1.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/mysql.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/oracle.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/pg.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/solid-nt4.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/solid.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/limits/sybase.cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/myisam.cnf
+${MARIADB_VER}/share/mariadb-bench/sql-bench/run-all-tests
+${MARIADB_VER}/share/mariadb-bench/sql-bench/server-cfg
+${MARIADB_VER}/share/mariadb-bench/sql-bench/test-ATIS
+${MARIADB_VER}/share/mariadb-bench/sql-bench/test-alter-table
+${MARIADB_VER}/share/mariadb-bench/sql-bench/test-big-tables
+${MARIADB_VER}/share/mariadb-bench/sql-bench/test-connect
+${MARIADB_VER}/share/mariadb-bench/sql-bench/test-create
+${MARIADB_VER}/share/mariadb-bench/sql-bench/test-insert
+${MARIADB_VER}/share/mariadb-bench/sql-bench/test-select
+${MARIADB_VER}/share/mariadb-bench/sql-bench/test-table-elimination
+${MARIADB_VER}/share/mariadb-bench/sql-bench/test-transactions
+${MARIADB_VER}/share/mariadb-bench/sql-bench/test-wisconsin
+${MARIADB_VER}/share/mariadb/charsets/
+${MARIADB_VER}/share/mariadb/charsets/Index.xml
+${MARIADB_VER}/share/mariadb/charsets/README
+${MARIADB_VER}/share/mariadb/charsets/armscii8.xml
+${MARIADB_VER}/share/mariadb/charsets/ascii.xml
+${MARIADB_VER}/share/mariadb/charsets/cp1250.xml
+${MARIADB_VER}/share/mariadb/charsets/cp1251.xml
+${MARIADB_VER}/share/mariadb/charsets/cp1256.xml
+${MARIADB_VER}/share/mariadb/charsets/cp1257.xml
+${MARIADB_VER}/share/mariadb/charsets/cp850.xml
+${MARIADB_VER}/share/mariadb/charsets/cp852.xml
+${MARIADB_VER}/share/mariadb/charsets/cp866.xml
+${MARIADB_VER}/share/mariadb/charsets/dec8.xml
+${MARIADB_VER}/share/mariadb/charsets/geostd8.xml
+${MARIADB_VER}/share/mariadb/charsets/greek.xml
+${MARIADB_VER}/share/mariadb/charsets/hebrew.xml
+${MARIADB_VER}/share/mariadb/charsets/hp8.xml
+${MARIADB_VER}/share/mariadb/charsets/keybcs2.xml
+${MARIADB_VER}/share/mariadb/charsets/koi8r.xml
+${MARIADB_VER}/share/mariadb/charsets/koi8u.xml
+${MARIADB_VER}/share/mariadb/charsets/latin1.xml
+${MARIADB_VER}/share/mariadb/charsets/latin2.xml
+${MARIADB_VER}/share/mariadb/charsets/latin5.xml
+${MARIADB_VER}/share/mariadb/charsets/latin7.xml
+${MARIADB_VER}/share/mariadb/charsets/macce.xml
+${MARIADB_VER}/share/mariadb/charsets/macroman.xml
+${MARIADB_VER}/share/mariadb/charsets/swe7.xml
+${MARIADB_VER}/share/mariadb/czech/
+${MARIADB_VER}/share/mariadb/czech/errmsg.sys
+${MARIADB_VER}/share/mariadb/danish/
+${MARIADB_VER}/share/mariadb/danish/errmsg.sys
+${MARIADB_VER}/share/mariadb/dutch/
+${MARIADB_VER}/share/mariadb/dutch/errmsg.sys
+${MARIADB_VER}/share/mariadb/english/
+${MARIADB_VER}/share/mariadb/english/errmsg.sys
+${MARIADB_VER}/share/mariadb/errmsg-utf8.txt
+${MARIADB_VER}/share/mariadb/estonian/
+${MARIADB_VER}/share/mariadb/estonian/errmsg.sys
+${MARIADB_VER}/share/mariadb/fill_help_tables.sql
+${MARIADB_VER}/share/mariadb/french/
+${MARIADB_VER}/share/mariadb/french/errmsg.sys
+${MARIADB_VER}/share/mariadb/german/
+${MARIADB_VER}/share/mariadb/german/errmsg.sys
+${MARIADB_VER}/share/mariadb/greek/
+${MARIADB_VER}/share/mariadb/greek/errmsg.sys
+${MARIADB_VER}/share/mariadb/hungarian/
+${MARIADB_VER}/share/mariadb/hungarian/errmsg.sys
+${MARIADB_VER}/share/mariadb/install_spider.sql
+${MARIADB_VER}/share/mariadb/italian/
+${MARIADB_VER}/share/mariadb/italian/errmsg.sys
+${MARIADB_VER}/share/mariadb/japanese/
+${MARIADB_VER}/share/mariadb/japanese/errmsg.sys
+${MARIADB_VER}/share/mariadb/korean/
+${MARIADB_VER}/share/mariadb/korean/errmsg.sys
+${MARIADB_VER}/share/mariadb/maria_add_gis_sp.sql
+${MARIADB_VER}/share/mariadb/maria_add_gis_sp_bootstrap.sql
+${MARIADB_VER}/share/mariadb/mysql_performance_tables.sql
+${MARIADB_VER}/share/mariadb/mysql_system_tables.sql
+${MARIADB_VER}/share/mariadb/mysql_system_tables_data.sql
+${MARIADB_VER}/share/mariadb/mysql_test_data_timezone.sql
+${MARIADB_VER}/share/mariadb/mysql_to_mariadb.sql
+${MARIADB_VER}/share/mariadb/norwegian/
+${MARIADB_VER}/share/mariadb/norwegian-ny/
+${MARIADB_VER}/share/mariadb/norwegian-ny/errmsg.sys
+${MARIADB_VER}/share/mariadb/norwegian/errmsg.sys
+${MARIADB_VER}/share/mariadb/polish/
+${MARIADB_VER}/share/mariadb/polish/errmsg.sys
+${MARIADB_VER}/share/mariadb/portuguese/
+${MARIADB_VER}/share/mariadb/portuguese/errmsg.sys
+${MARIADB_VER}/share/mariadb/romanian/
+${MARIADB_VER}/share/mariadb/romanian/errmsg.sys
+${MARIADB_VER}/share/mariadb/russian/
+${MARIADB_VER}/share/mariadb/russian/errmsg.sys
+${MARIADB_VER}/share/mariadb/serbian/
+${MARIADB_VER}/share/mariadb/serbian/errmsg.sys
+${MARIADB_VER}/share/mariadb/slovak/
+${MARIADB_VER}/share/mariadb/slovak/errmsg.sys
+${MARIADB_VER}/share/mariadb/spanish/
+${MARIADB_VER}/share/mariadb/spanish/errmsg.sys
+${MARIADB_VER}/share/mariadb/swedish/
+${MARIADB_VER}/share/mariadb/swedish/errmsg.sys
+${MARIADB_VER}/share/mariadb/ukrainian/
+${MARIADB_VER}/share/mariadb/ukrainian/errmsg.sys
+${MARIADB_VER}/share/pkgconfig/
+${MARIADB_VER}/share/pkgconfig/mariadb.pc
+share/doc/pkg-readmes/${FULLPKGNAME}

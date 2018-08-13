@@ -1,0 +1,22 @@
+$OpenBSD: patch-sql_CMakeLists_txt,v 1.15 2017/11/05 19:17:23 sthen Exp $
+Index: sql/CMakeLists.txt
+--- sql/CMakeLists.txt.orig
++++ sql/CMakeLists.txt
+@@ -396,7 +396,7 @@ ADD_CUSTOM_TARGET(distclean
+   VERBATIM
+   )
+ 
+-IF(INSTALL_LAYOUT STREQUAL "STANDALONE")
++IF(FALSE)
+ 
+ # Copy db.opt into data/test/
+ SET(DBOPT_FILE ${CMAKE_SOURCE_DIR}/support-files/db.opt ) 
+@@ -438,7 +438,7 @@ ELSE()
+   # Not windows or cross compiling, just install an empty directory
+   INSTALL(FILES ${DUMMY_FILE} DESTINATION data/mysql COMPONENT DataFiles)
+ ENDIF(WIN32 AND MYSQLD_EXECUTABLE)
+-ENDIF(INSTALL_LAYOUT STREQUAL "STANDALONE")
++ENDIF(FALSE)
+ 
+ IF(WIN32)
+   SET(my_bootstrap_sql ${CMAKE_CURRENT_BINARY_DIR}/my_bootstrap.sql)

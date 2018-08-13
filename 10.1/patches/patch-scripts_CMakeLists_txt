@@ -1,0 +1,28 @@
+$OpenBSD: patch-scripts_CMakeLists_txt,v 1.9 2018/08/09 10:58:52 sthen Exp $
+Index: scripts/CMakeLists.txt
+--- scripts/CMakeLists.txt.orig
++++ scripts/CMakeLists.txt
+@@ -205,15 +205,6 @@ ENDIF(UNIX)
+ # i.e. makes access relative the current directory. This matches
+ # the documentation, so better not change this.
+ 
+-IF(INSTALL_LAYOUT MATCHES "STANDALONE")
+-  SET(prefix ".")
+-  SET(bindir ${prefix}/${INSTALL_BINDIR})
+-  SET(sbindir ${prefix}/${INSTALL_SBINDIR})
+-  SET(scriptdir ${prefix}/${INSTALL_BINDIR})
+-  SET(libexecdir ${prefix}/${INSTALL_SBINDIR})
+-  SET(pkgdatadir ${prefix}/${INSTALL_MYSQLSHAREDIR})
+-  SET(localstatedir ${prefix}/data)
+-ELSE()
+   SET(prefix "${CMAKE_INSTALL_PREFIX}")
+   SET(bindir ${INSTALL_BINDIRABS})
+   SET(sbindir ${INSTALL_SBINDIRABS})
+@@ -221,7 +212,6 @@ ELSE()
+   SET(libexecdir ${INSTALL_SBINDIRABS})
+   SET(pkgdatadir ${INSTALL_MYSQLSHAREDIRABS})
+   SET(localstatedir ${MYSQL_DATADIR})
+-ENDIF()
+ 
+ SET(resolveip_locations "$basedir/${INSTALL_BINDIR} $basedir/bin")
+ SET(mysqld_locations "$basedir/${INSTALL_SBINDIR} $basedir/libexec $basedir/sbin $basedir/bin")

@@ -1,0 +1,17 @@
+This is a collection of ports for mariadb versions after
+the version in the OpenBSD ports tree. These ports install
+into versioned directories so you can run multiple server
+versions at the same time for testing.
+
+You can clone this repository and move it to
+/usr/ports/mystuff/databases/mariadb-current
+then you should be able to build these ports.
+
+For simplicity, these ports do not use multi-packages, they
+install both the client and server parts in one package. Also,
+they do not include the mariadb-test directory, since that
+bloats the package by quite a bit.
+
+The 10.1 port requires LD_LIBRARY_PATH=/usr/local/mariadb-10.1/lib
+for certain binaries to work, but newer MariaDB versions do not
+appear to have the issue.
