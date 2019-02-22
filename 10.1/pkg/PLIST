@@ -719,4 +719,4 @@ ${MARIADB_VER}/share/mariadb/ukrainian/
 ${MARIADB_VER}/share/mariadb/ukrainian/errmsg.sys
 ${MARIADB_VER}/share/pkgconfig/
 ${MARIADB_VER}/share/pkgconfig/mariadb.pc
-share/doc/pkg-readmes/${FULLPKGNAME}
+share/doc/pkg-readmes/${PKGSTEM}
