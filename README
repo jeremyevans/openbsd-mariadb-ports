@@ -12,6 +12,7 @@ install both the client and server parts in one package. Also,
 they do not include the mariadb-test directory, since that
 bloats the package by quite a bit.
 
-The 10.1 port requires LD_LIBRARY_PATH=/usr/local/mariadb-10.1/lib
+The 10.0 and 10.1 ports requires
+LD_LIBRARY_PATH=/usr/local/mariadb-10.{0,1}/lib
 for certain binaries to work, but newer MariaDB versions do not
 appear to have the issue.
