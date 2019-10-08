@@ -18,7 +18,7 @@ SHARED_LIBS?=	mysqlclient_r	${LIB_VERSION}.0 \
 HOMEPAGE?=	http://mariadb.org/
 
 # GPLv2 and LGPLv2.1
-PERMIT_PACKAGE_CDROM?=	Yes
+PERMIT_PACKAGE ?=	Yes
 
 WANTLIB?=	c curses crypto iconv m pthread readline ssl ${COMPILER_LIBCXX} z
 
