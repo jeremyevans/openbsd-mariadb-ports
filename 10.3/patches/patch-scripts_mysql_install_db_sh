@@ -54,7 +54,7 @@ Index: scripts/mysql_install_db.sh
 -    echo
 -    echo "You can test the MariaDB daemon with mysql-test-run.pl"
 -    echo "cd '$basedir/mysql-test' ; perl mysql-test-run.pl"
-+    echo "rcctl start mariadb102"
++    echo "rcctl start mariadb103"
    fi
  
    echo
