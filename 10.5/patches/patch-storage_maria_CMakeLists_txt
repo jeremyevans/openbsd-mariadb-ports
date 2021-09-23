@@ -1,0 +1,33 @@
+$OpenBSD$
+
+Index: storage/maria/CMakeLists.txt
+--- storage/maria/CMakeLists.txt.orig
++++ storage/maria/CMakeLists.txt
+@@ -106,6 +106,7 @@ ENDIF()
+ 
+ OPTION(USE_ARIA_FOR_TMP_TABLES "Use Aria for temporary tables" ON)
+ 
++IF(FALSE)
+ #
+ # S3
+ #
+@@ -117,17 +118,16 @@ SET(S3_SOURCES s3_func.c
+     libmarias3/src/sha256-internal.c libmarias3/src/xml.c
+     libmarias3/src/assume_role.c)
+ 
+-IF(NOT PLUGIN_S3 STREQUAL NO)
+   FIND_PACKAGE(CURL)
+ ENDIF()
+ 
+-IF (CURL_FOUND)
++IF (FALSE)
+   LINK_DIRECTORIES(${PC_CURL_LIBDIR})
+   MYSQL_ADD_PLUGIN(s3 ha_s3.cc ${S3_SOURCES} COMPONENT s3-engine
+     LINK_LIBRARIES curl z STORAGE_ENGINE NOT_EMBEDDED CONFIG s3.cnf)
+ ENDIF()
+ 
+-IF(TARGET s3)
++IF(FALSE)
+   MYSQL_ADD_EXECUTABLE(aria_s3_copy aria_s3_copy.cc ${S3_SOURCES} COMPONENT s3-engine)
+   TARGET_LINK_LIBRARIES(aria_s3_copy aria myisam mysys mysys_ssl curl z)
+   INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/libmarias3)

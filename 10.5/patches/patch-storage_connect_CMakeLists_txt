@@ -1,0 +1,61 @@
+$OpenBSD$
+
+Index: storage/connect/CMakeLists.txt
+--- storage/connect/CMakeLists.txt.orig
++++ storage/connect/CMakeLists.txt
+@@ -89,7 +89,7 @@ ENDIF(UNIX)
+ # BSON: the new handling of JSON data included temporarily for testing
+ #
+ 
+-OPTION(CONNECT_WITH_BSON "Compile CONNECT storage engine with BSON support" ON)
++OPTION(CONNECT_WITH_BSON "Compile CONNECT storage engine with BSON support" OFF)
+ 
+ IF(CONNECT_WITH_BSON)
+   SET(CONNECT_SOURCES ${CONNECT_SOURCES}
+@@ -102,7 +102,7 @@ ENDIF(CONNECT_WITH_BSON)
+ # VCT: the VEC format might be not supported in future versions
+ #
+ 
+-OPTION(CONNECT_WITH_VCT "Compile CONNECT storage engine with VCT support" ON)
++OPTION(CONNECT_WITH_VCT "Compile CONNECT storage engine with VCT support" OFF)
+ 
+ IF(CONNECT_WITH_VCT)
+   SET(CONNECT_SOURCES ${CONNECT_SOURCES} filamvct.cpp tabvct.cpp filamvct.h tabvct.h)
+@@ -115,7 +115,7 @@ ADD_FEATURE_INFO(CONNECT_VCT CONNECT_WITH_VCT "Support
+ # XML
+ #
+ 
+-OPTION(CONNECT_WITH_LIBXML2 "Compile CONNECT storage engine with LIBXML2 support" ON)
++OPTION(CONNECT_WITH_LIBXML2 "Compile CONNECT storage engine with LIBXML2 support" OFF)
+ 
+ IF(CONNECT_WITH_LIBXML2)
+   IF(WIN32)
+@@ -178,7 +178,7 @@ ENDIF(NOT UNIX)
+ # ODBC
+ #
+ 
+-OPTION(CONNECT_WITH_ODBC "Compile CONNECT storage engine with ODBC support" ON)
++OPTION(CONNECT_WITH_ODBC "Compile CONNECT storage engine with ODBC support" OFF)
+ 
+ IF(CONNECT_WITH_ODBC)
+   if(UNIX)
+@@ -260,8 +260,8 @@ ADD_FEATURE_INFO(CONNECT_ODBC ODBC_LIBRARY "Support fo
+ #
+ # JDBC with MongoDB Java Driver included but disabled if without MONGO
+ #
+-OPTION(CONNECT_WITH_MONGO "Compile CONNECT storage engine with MONGO support" ON)
+-OPTION(CONNECT_WITH_JDBC "Compile CONNECT storage engine with JDBC support" ON)
++OPTION(CONNECT_WITH_MONGO "Compile CONNECT storage engine with MONGO support" OFF)
++OPTION(CONNECT_WITH_JDBC "Compile CONNECT storage engine with JDBC support" OFF)
+ 
+ IF(CONNECT_WITH_JDBC)
+   FIND_PACKAGE(Java 1.6)
+@@ -350,7 +350,7 @@ ENDIF(CONNECT_WITH_MONGO)
+ # REST
+ #
+ 
+-OPTION(CONNECT_WITH_REST "Compile CONNECT storage engine with REST support" ON)
++OPTION(CONNECT_WITH_REST "Compile CONNECT storage engine with REST support" OFF)
+ 
+ IF(CONNECT_WITH_REST)
+ # MESSAGE(STATUS "=====> REST support is ON")
