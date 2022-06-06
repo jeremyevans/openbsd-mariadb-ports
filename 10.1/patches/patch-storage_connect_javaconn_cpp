@@ -1,5 +1,3 @@
-$OpenBSD$
-
 Index: storage/connect/javaconn.cpp
 --- storage/connect/javaconn.cpp.orig
 +++ storage/connect/javaconn.cpp

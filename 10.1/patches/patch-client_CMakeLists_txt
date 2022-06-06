@@ -1,4 +1,3 @@
-$OpenBSD: patch-client_CMakeLists_txt,v 1.7 2017/04/24 08:47:58 sthen Exp $
 --- client/CMakeLists.txt.orig	Mon Mar  6 20:04:29 2017
 +++ client/CMakeLists.txt	Sun Apr 23 20:58:10 2017
 @@ -32,7 +32,7 @@ COPY_OPENSSL_DLLS(copy_openssl_client)

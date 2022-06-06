@@ -1,5 +1,3 @@
-$OpenBSD$
-
 Index: storage/connect/tabjmg.cpp
 --- storage/connect/tabjmg.cpp.orig
 +++ storage/connect/tabjmg.cpp

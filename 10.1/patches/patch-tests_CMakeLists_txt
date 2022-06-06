@@ -1,4 +1,3 @@
-$OpenBSD: patch-tests_CMakeLists_txt,v 1.2 2017/04/24 08:47:58 sthen Exp $
 --- tests/CMakeLists.txt.orig	Mon Mar  6 20:04:51 2017
 +++ tests/CMakeLists.txt	Sun Apr 23 20:58:50 2017
 @@ -18,12 +18,12 @@ ADD_DEFINITIONS("-DMYSQL_CLIENT")

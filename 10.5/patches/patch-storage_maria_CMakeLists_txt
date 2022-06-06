@@ -1,5 +1,3 @@
-$OpenBSD$
-
 Index: storage/maria/CMakeLists.txt
 --- storage/maria/CMakeLists.txt.orig
 +++ storage/maria/CMakeLists.txt

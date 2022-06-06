@@ -1,5 +1,3 @@
-$OpenBSD: patch-scripts_mysql_install_db_sh,v 1.18 2020/01/29 02:16:43 sthen Exp $
-
 Index: scripts/mysql_install_db.sh
 --- scripts/mysql_install_db.sh.orig
 +++ scripts/mysql_install_db.sh

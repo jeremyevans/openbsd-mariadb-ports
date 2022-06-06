@@ -1,5 +1,3 @@
-$OpenBSD$
-
 Index: storage/connect/CMakeLists.txt
 --- storage/connect/CMakeLists.txt.orig
 +++ storage/connect/CMakeLists.txt

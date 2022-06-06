@@ -1,5 +1,3 @@
-$OpenBSD: patch-cmake_os_OpenBSD_cmake,v 1.1 2021/06/11 19:19:59 sthen Exp $
-
 Index: cmake/os/OpenBSD.cmake
 --- cmake/os/OpenBSD.cmake.orig
 +++ cmake/os/OpenBSD.cmake

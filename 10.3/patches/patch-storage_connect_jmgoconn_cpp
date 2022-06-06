@@ -1,5 +1,3 @@
-$OpenBSD$
-
 Index: storage/connect/jmgoconn.cpp
 --- storage/connect/jmgoconn.cpp.orig
 +++ storage/connect/jmgoconn.cpp

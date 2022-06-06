@@ -1,6 +1,4 @@
 #!/bin/sh
-#
-# $OpenBSD: mysqld.rc,v 1.4 2017/05/27 19:57:06 ajacoutot Exp $
 
 daemon="${TRUEPREFIX}/mariadb-10.0/bin/mysqld_safe"
 

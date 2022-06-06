@@ -1,5 +1,3 @@
-$OpenBSD$
-
 Index: storage/connect/jdbconn.cpp
 --- storage/connect/jdbconn.cpp.orig
 +++ storage/connect/jdbconn.cpp

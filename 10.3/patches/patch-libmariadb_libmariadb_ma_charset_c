@@ -1,5 +1,3 @@
-$OpenBSD$
-
 Index: libmariadb/libmariadb/ma_charset.c
 --- libmariadb/libmariadb/ma_charset.c.orig
 +++ libmariadb/libmariadb/ma_charset.c

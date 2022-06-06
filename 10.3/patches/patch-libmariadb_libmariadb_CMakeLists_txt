@@ -1,5 +1,3 @@
-$OpenBSD$
-
 Index: libmariadb/libmariadb/CMakeLists.txt
 --- libmariadb/libmariadb/CMakeLists.txt.orig
 +++ libmariadb/libmariadb/CMakeLists.txt
