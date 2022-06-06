@@ -1,6 +1,7 @@
 VERSION=	10.5.12
 MARIADB_VER=	mariadb-10.5
 PKGSTEM=	mariadb-current-10.5
+REVISION=	0
 
 post-install:
 	${POST_INSTALL}

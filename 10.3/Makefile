@@ -1,6 +1,6 @@
 VERSION=	10.3.8
 MARIADB_VER=	mariadb-10.3
-REVISION=	0
+REVISION=	1
 PKGSTEM=	mariadb-current-10.3
 
 post-install:

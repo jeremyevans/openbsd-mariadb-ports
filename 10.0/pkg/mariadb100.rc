@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/ksh
 
 daemon="${TRUEPREFIX}/mariadb-10.0/bin/mysqld_safe"
 
