@@ -7,7 +7,7 @@ DISTNAME?=	mariadb-${VERSION}
 PKGNAME?=	mariadb-current-${VERSION}
 
 CATEGORIES?=	databases
-MASTER_SITES?=	http://mariadb.mirror.iweb.com//${DISTNAME}/source/ \
+SITES?=		http://mariadb.mirror.iweb.com//${DISTNAME}/source/ \
 		http://ftp.osuosl.org/pub/mariadb/${DISTNAME}/source/ \
 
 LIB_VERSION?=	28
